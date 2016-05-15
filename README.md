@@ -4,7 +4,7 @@ Experiments with SOAP UI
 # generateDynamicResponse
 
 In SOAPUI, in the mock response of the intended response result put:
-${responseRequestedPortsMessage} 
+${responseGetDataMessage} 
 Then in the script copy whatever you need from the generateDynamicResponse file. The implementation is quite attached with my needs for this mock however some of the functions can be used without changes. 
 The structure of the data (AUTORESPONSE table), looked like this:
 
