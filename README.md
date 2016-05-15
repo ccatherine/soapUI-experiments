@@ -45,15 +45,15 @@ At the end, the payload would look like this:
    <soapenv:Body>
       <ns1:getDataResponse>
          <getDataReturn>
-         <mainData>
-          <name>Maria</name>
-          <occupation>Software Developer</occupation>
-          <address>
-            <country>Portugal</country>
-            <streetName>Rua</streetName>
-            <postCode>34532</postCode>
-          </address>
-         </mainData>
+          <mainData>
+           <name>Maria</name>
+           <occupation>Software Developer</occupation>
+           <address>
+             <country>Portugal</country>
+             <streetName>Rua</streetName>
+             <postCode>34532</postCode>
+           </address>
+          </mainData>
          </getDataReturn>
       </ns1:getDataResponse>
    </soapenv:Body>
