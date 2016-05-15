@@ -118,7 +118,7 @@ import groovy.sql.Sql
 def groovyUtils = new com.eviware.soapui.support.GroovyUtils(context);
 def holder = groovyUtils.getXmlHolder(mockRequest.requestContent);
 
-requestContext.responseRequestedPortsMessage = null;
+requestContext.responseGetDataMessage = null;
 
 def responseHholder = getResponseBase("getResp");
 def req1, req4, parentnode;
@@ -149,4 +149,4 @@ sql.eachRow(generateSQLStatementBasedOnStatus(holder))
 		createStruct(map,parentnode);
 }
 
-requestContext.responseRequestedPortsMessage = responseHholder.xml;
+requestContext.responseGetDataMessage = responseHholder.xml;
