@@ -134,7 +134,7 @@ sql.eachRow(generateSQLStatementBasedOnStatus(holder))
 	
 	def attMap;
 	def map  = new TreeMap<String,HashMap<String,String>>();
-	sql.eachRow("select * from autoResponse where STATEID = ${portautoid} order by path desc")
+	sql.eachRow("select * from autoResponse where STATEID = ${stateid} order by path desc")
 	{
 		if (tempPath != it.path)
 		{
